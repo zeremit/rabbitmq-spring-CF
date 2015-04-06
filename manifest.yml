@@ -1,0 +1,9 @@
+---
+applications:
+- name: rabbitmq-spring-altoros
+  memory: 512M
+  instances: 1
+  host: rabbitmq-spring-altoros
+  path: target/rabbitmq-spring-1.0-SNAPSHOT.war
+  services:
+     - spring-rabbitmq
