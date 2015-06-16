@@ -5,5 +5,8 @@ applications:
   instances: 1
   host: rabbitmq-spring-cf
   path: target/rabbitmq-spring-1.0-SNAPSHOT.war
+  env:
+    log_service: rabbitmq
   services:
-     - rabbitmq-spring
+#     - rabbitmq-spring
+     - rabbitmq
